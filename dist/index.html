@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>title</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tailwind.css" type="text/css">
+  <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
+  </head>
+  
+  <body>
+  
+    <nav class="flex flex-row justify-between items-center bg-black h-16 relative">
+      <a href="#" class="no-underline text-white text-4xl mx-4">Logo</a>
+   <div class="bg-blue text-white absolute pin-r pin-y h-screen flex justify-center items-center" id="menu">
+      <ul class="list-reset">
+          <li class="m-3">
+              <a href="#" class="text-white no-underline  text-2xl">Link</a>
+          </li>
+          <li class="m-3">
+              <a href="#" class="text-white no-underline text-2xl">Link</a>
+          </li>
+          <li class="m-3">
+              <a href="#" class="text-white no-underline text-2xl">Link</a>
+          </li>
+          <li class="m-3">
+              <a href="#" class="text-white no-underline text-2xl">Link</a>
+          </li>
+      </ul>
+    </div>
+      <div class="h-8 w-8 relative flex  flex-col mx-4 cursor-pointer" id="burger">
+          <span class="bg-white h-1  w-full inline-block my-2 absolute"></span>
+          <span class="bg-white h-1 w-full inline-block my-4 absolute"></span>
+          <span class="bg-white h-1 w-full inline-block my-6 absolute"></span>
+      </div>
+  </nav>
+   <!--  w-3/5 --> 
+  <script src="../dist/js/navbar.js"></script>
+  </body>
+  
+</html>
