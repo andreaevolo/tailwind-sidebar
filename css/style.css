@@ -1,17 +1,4 @@
-/* #burger span:nth-child(1) {
-    transform: translateY(20px)  rotate(-45deg);
-   
-}
 
-#burger span:nth-child(2) {
-    transform: translateY(20px) rotate(45deg);
-    top: 0;
-}
-
- 
-#burger span:nth-child(3) {
-    transform: translateY(0px) rotate(45deg);
-}  */
 
 .lineOne {
     transform: translateY(8px)  rotate(-45deg);
@@ -30,9 +17,10 @@
     
 }
 #menu {
-    right: -300px;
+    width: 0;
 }
 
 .animateMenu {
-    transition: right 0.2s cubic-bezier(0.53,-0.14, 1, 1);
+    transition: all 0.2s cubic-bezier(0.53,-0.14, 1, 1);
 }
+
