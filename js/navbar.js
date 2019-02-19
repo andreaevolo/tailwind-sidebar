@@ -26,7 +26,7 @@ let switchNavState = false;
 
     function menuAnimation() {
         navbarContainer.classList.add("animateMenu");
-        navbarContainer.style.width = "100%";
+        navbarContainer.style.width = "60%";
     }
 
     function showList() {
