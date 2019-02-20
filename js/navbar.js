@@ -3,9 +3,6 @@ const burger = document.querySelector('#burger');
 const lineOne = document.querySelector('#burger span:nth-child(1)');
 const lineTwo = document.querySelector('#burger span:nth-child(2)');
 const lineThree = document.querySelector('#burger span:nth-child(3)');
-const ulList = document.querySelector('#menu>ul');
-const ulLi = document.querySelectorAll('#menu ul li');
-const ulLink = document.querySelectorAll("#menu ul li a");
 let switchNavState = false;
 
 
@@ -26,39 +23,18 @@ let switchNavState = false;
 
     function menuAnimation() {
         navbarContainer.classList.add("animateMenu");
-        navbarContainer.style.width = "60%";
-    }
-
-    function showList() {
-        ulList.classList.remove("hidden");
-        for (var i = 0; i < ulLink.length; i++) {
-            ulLink[i].classList.remove("hidden");
-        }
-    }
-    // add timeout before hide ulList
-    function hideList() {
-        setTimeout(function() {
-            ulList.classList.add("hidden")
-            for (var i = 0; i < ulLink.length; i++) {
-                ulLink[i].classList.add("hidden");
-            }
-    
-            }, 200);
+        navbarContainer.style.transform = "translateX(0px)";
     }
 
 
-burger.addEventListener("click", () => {
+burger.addEventListener("click", function() {
     switchNavState = !switchNavState;
     if(switchNavState) {
      addHamburgerStyle();
      menuAnimation();
-     showList();
-
     }
     else {
-        hideList();
         removeHamburgerStyle();
-        navbarContainer.style.width = "0px";
-
+        navbarContainer.style.transform = "translateX(500px)";
     }
 })

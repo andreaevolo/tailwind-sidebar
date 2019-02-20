@@ -17,7 +17,8 @@
     
 }
 #menu {
-    width: 0;
+    width: 60%;
+    transform: translateX(500px);
 }
 
 .animateMenu {
