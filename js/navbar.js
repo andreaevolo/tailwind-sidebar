@@ -1,9 +1,12 @@
-const navbarContainer = document.querySelector('#menu');
+const navbarContainer = document.querySelector('nav');
+const navbar = document.querySelector('#menu');
 const burger = document.querySelector('#burger');
 const lineOne = document.querySelector('#burger span:nth-child(1)');
 const lineTwo = document.querySelector('#burger span:nth-child(2)');
 const lineThree = document.querySelector('#burger span:nth-child(3)');
+
 let switchNavState = false;
+
 
 
 
@@ -22,10 +25,10 @@ let switchNavState = false;
 
 
     function menuAnimation() {
-        navbarContainer.classList.add("animateMenu");
-        navbarContainer.style.transform = "translateX(0px)";
+        navbar.classList.add("animateMenu");
+        navbar.style.transform = "translateX(0px)";
     }
-
+    
 
 burger.addEventListener("click", function() {
     switchNavState = !switchNavState;
@@ -35,6 +38,10 @@ burger.addEventListener("click", function() {
     }
     else {
         removeHamburgerStyle();
-        navbarContainer.style.transform = "translateX(3000px)";
+        navbar.style.transform = "translateX(2000px)";
     }
-})
+});
+
+
+
+
