@@ -35,6 +35,6 @@ burger.addEventListener("click", function() {
     }
     else {
         removeHamburgerStyle();
-        navbarContainer.style.transform = "translateX(500px)";
+        navbarContainer.style.transform = "translateX(3000px)";
     }
 })

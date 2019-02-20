@@ -17,11 +17,17 @@
     
 }
 #menu {
-    width: 60%;
-    transform: translateX(500px);
+    width: 100%;
+    transform: translateX(1000px);
 }
 
 .animateMenu {
     transition: all 0.2s cubic-bezier(0.53,-0.14, 1, 1);
+}
+
+@media screen and (min-width: 600px) {
+    #menu {
+        transform: translateX(3000px);
+    }
 }
 
